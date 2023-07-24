@@ -16,45 +16,43 @@
     <title>Mert Can Caglayan</title>
 
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbarNav">
     <!-- Navbar-start -->
-    <div class="header" id="navbarHeader">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg py-3" id="navbarNav">
-                <div class="centered-nav">
-                    <ul class="navbar-nav">
-                        <!-- Main navigation links go here -->
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="dropdown">
-                    <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
-                        Menu
-                    </button>
-                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
-                        <li><a class="dropdown-item active" href="#">About</a></li>
-                        <li><a class="dropdown-item" href="#">Projects</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Contact</a></li>
-                    </ul>
-                </div>
-            </nav>
+    <nav class="navbar navbar-expand-lg py-3 header fixed-top" id="navbarNav">
+        <div class="centered-nav">
+            <ul class="navbar-nav">
+                <!-- Main navigation links go here -->
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
-    </div>
+        <div class="dropdown">
+            <button class="btn btn-dark dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Menu
+            </button>
+            <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item active" href="#about">About</a></li>
+                <li><a class="dropdown-item" href="#projects">Projects</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <!-- Navbar-end -->
 
     <!-- Jumbotron-start -->
+    <br id="about">
+    <br>
     <div class="container">
         <div class="row">
-            <div class="jumbotron col-sm-8 col-md-10 offset-1" id="about">
+            <div class="jumbotron col-sm-8 col-md-10 offset-1">
                 <div class="row">
                     <div class="jumbotron-text col-sm-12 col-md-7">
                         <h1 class="my-5">About Me</h1>
@@ -69,13 +67,13 @@
     </div>
     <!-- Jumbotron-end -->
 
-    <hr style="color: aliceblue;">
-
     <!-- main start (projects are here) -->
     <main>
-        <h2 style="text-align: center; color:aliceblue" class="mb-5">Projects</h2>
+        <br id="projects">
+        <br>
+        <h2 style="text-align: center; color:aliceblue" class="my-5">Projects</h2>
         <section class="row">
-            <article class="col-md-10 offset-1 first-project mt-5">
+            <article class="col-md-10 offset-1 first-project my-5">
                 <h3 style="text-align: center; color:aliceblue">Text Reveal On Hover</h3>
                 <div class="reveals">
                     <div class="row">
@@ -106,27 +104,27 @@
                     </div>
                 </div>
             </article>
-            <hr style="color: transparent;">
-            <article class="col-md-10 offset-1 second-project">
+            <hr style="color: transparent;" class="my-5">
+            <article class="col-md-10 offset-1 second-project my-5">
                 <h3 style="text-align: center; color:aliceblue">Floating Cards</h3>
                 <div class="container">
                     <div class="floating-cards">
-                        <div class="card">
+                        <div class="cart">
                             <figure>
                                 <img src="assets/second/city-view.jpg" alt="City View" title="City View">
                             </figure>
                         </div>
-                        <div class="card">
+                        <div class="cart">
                             <figure>
                                 <img src="assets/second/luffy-dark-dark-luffy.jpg" alt="Luffy İmage Dark" title="Luffy dark Image">
                             </figure>
                         </div>
-                        <div class="card">
+                        <div class="cart">
                             <figure>
                                 <img src="assets/second/nature-view.jpg" alt="Nature View" title="Nature Animation View">
                             </figure>
                         </div>
-                        <div class="card">
+                        <div class="cart">
                             <figure>
                                 <img src="assets/second/space.jpg" alt="Earth From Space" title="Earth From Space">
                             </figure>
@@ -135,7 +133,7 @@
                 </div>
             </article>
             <hr style="color: transparent;" class="my-5">
-            <article class="col-md-10 offset-1 third-project mt-5">
+            <article class="col-md-10 offset-1 third-project my-5">
                 <h3 style="text-align: center; color:aliceblue;">Slider</h3>
                 <div class="container">
                     <div class="slider">
@@ -168,8 +166,70 @@
                     </span>
                 </div>
             </article>
+            <hr style="color: transparent;" class="my-5">
+            <article class="col-md-10 offset-1 fourth-project my-5">
+                <h3 style="text-align: center; color:aliceblue" class="mb-5">Medium Main Page Clone</h3>
+                <div class="row fourth-project-container">
+                    <div class="col-md-4">
+                        <img src="assets/fourth/medium.png" alt="" class="fourth-img">
+                    </div>
+                    <div class="col-md-1"> <br></div>
+                    <div class="col-md-4">
+                        <img src="assets/fourth/medium-2.png" alt="" class="fourth-img">
+                    </div>
+                    <div class="col-md-8 mt-5 mb-5">
+                        <video src="assets/fourth/Medium-Clone Video.mp4" controls type="video/mp4" class="fourth-media"></video>
+                    </div>
+                </div>
+            </article>
         </section>
     </main>
+    <!-- main end (projects are here) -->
 
+
+    <!-- footer start -->
+    <footer class="bg-dark text-center text-white">
+        <div class="container p-4 pb-0">
+          <h3 class="mb-4" id="contact">Contact</h3>
+          <!-- Section: Social media -->
+          <section class="mb-4">     
+            <!-- Instagram -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/m.cancaglayan/" role="button"
+            target="_blank"
+              ><i class="fa-brands fa-instagram fa-lg"></i></a>
+      
+            <!-- Linkedin -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/mert-can-caglayan/" role="button"
+            target="_blank"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+      
+            <!-- Github -->
+            <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/mertcancaglayan" role="button"
+            target="_blank"
+              ><i class="fab fa-github"></i
+            ></a>
+          </section>
+          <!-- Section: Social media -->
+        </div>      
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+          © 2023 Copyright:
+          <a class="text-white" href="#">Mert Can Çağlayan</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <!-- footer end -->
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
   </body>
 </html>
