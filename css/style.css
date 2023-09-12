@@ -1,5 +1,5 @@
 body{
-    background: linear-gradient(45deg, black, #444446);
+    background: #212122;
     padding: 100px;
     font-family: 'Courier New', 'Courier';
     position: relative;
@@ -53,12 +53,22 @@ body{
 
 /* jumbotron style start */
 
-.jumbotron figure {
-    max-height: 250px;
+.jumbotron { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron figure { 
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .jumbotron figure img.jumbotron-pp {
-    width: 100%;
+    max-width: 30%;
     object-fit: fill;
     border-radius: 40% 20%;
     -webkit-box-shadow: 5px 42px 41px 35px rgba(0,0,0,0.75);
@@ -83,9 +93,13 @@ body{
     font-weight: bold; 
     text-align: left;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
-    font-size: 1.8vw;
+    font-size: 20px;
     margin-left: 0;
-    font-family: cursive;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.jumbotron-text p {
+    text-indent: 10px;
 }
 
 .jumbotron-text h1 {
@@ -293,10 +307,16 @@ button {
 
 .fourth-img {
     width: 100%;
+    border-radius: 15px;
+    margin-top: 10px;
 }
 
 .fourth-img:hover {
     transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+.fourth-img:not(:hover) {
     transition: 0.5s ease-in-out;
 }
 
@@ -332,6 +352,31 @@ footer {
     /* Center the dropdown button on small devices */
     .dropdown {
         text-align: center;
+    }
+
+    .jumbotron {
+        display: flex;
+        text-align: center;
+    }
+
+    .jumbotron figure img.jumbotron-pp {
+        max-width: 70%;
+    }
+
+
+}
+
+@media (max-width: 542px) {
+    .second-project {
+        display: none;
+    }
+
+    #second-project-bottom {
+        display: none;
+    }
+
+    .jumbotron-text {
+        font-size: 10px;
     }
 }
 
